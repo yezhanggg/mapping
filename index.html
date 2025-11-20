@@ -145,7 +145,101 @@
         .letter-btn:hover .letter-count,
         .letter-btn.active .letter-count {
             opacity: 1;
-            bottom: -22px;
+            bottom: -24px;
+        }
+
+        /* ------------------------------------------
+           Responsive adjustments for small screens
+        ------------------------------------------ */
+        @media (max-width: 768px) {
+            #title img {
+                max-width: 240px;
+                width: 68%;
+            }
+
+            #header {
+                padding: 0 12px 140px 12px;
+            }
+
+            #alphabet-filter {
+                margin: 12px auto 0 auto;
+                padding: 8px 6px 18px 6px;
+                gap: 3px;
+            }
+
+            .letter-btn {
+                width: 34px;
+                height: 36px;
+                font-size: 13px;
+                border-radius: 6px;
+            }
+
+            .letter-count {
+                bottom: -22px;
+                font-size: 9px;
+                padding: 3px 6px;
+            }
+
+            .letter-count::before {
+                top: -5px;
+            }
+
+            #map-container {
+                height: calc(100% - 120px);
+                margin-top: 60px;
+            }
+
+            #info-panel {
+                width: 92vw;
+                bottom: 16px;
+                padding: 10px 12px;
+                border-radius: 20px;
+            }
+
+            #info-text {
+                font-size: 12px;
+            }
+
+            #info-toggle {
+                width: 30px;
+                height: 30px;
+            }
+
+            #city-list-wrapper {
+                max-height: 0;
+            }
+
+            #city-list {
+                max-height: 180px;
+            }
+
+            #form-btn {
+                top: 12px;
+                right: 12px;
+                padding: 10px 16px;
+                font-size: 14px;
+                border-radius: 10px;
+            }
+
+            #fav-container {
+                right: 12px;
+                bottom: 12px;
+            }
+
+            #fav-toggle {
+                font-size: 12px;
+                padding: 9px 12px;
+                border-radius: 10px;
+            }
+
+            #fav-panel {
+                width: 200px;
+                max-height: 180px;
+            }
+
+            .tooltip {
+                font-size: 11px;
+            }
         }
 
         .control-btn {
